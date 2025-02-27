@@ -29,8 +29,8 @@ public class JsonUtils {
     private static ObjectMapper objectMapper = new ObjectMapper();
 
     static {
-        objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false); // 序列化为空对象时，不会抛出JsonMappingException
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false); // 反序列化时未知属性，不会抛出JsonMappingException
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); // 忽略 null 值
         objectMapper.registerModules(new JavaTimeModule()); // 解决 LocalDateTime 的序列化
     }

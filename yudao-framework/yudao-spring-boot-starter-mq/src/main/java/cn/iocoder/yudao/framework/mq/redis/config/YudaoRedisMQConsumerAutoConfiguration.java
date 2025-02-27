@@ -41,7 +41,7 @@ import java.util.Properties;
 public class YudaoRedisMQConsumerAutoConfiguration {
 
     /**
-     * 创建 Redis Pub/Sub 广播消费的容器
+     * ⎈创建 Redis Pub/Sub 广播消费的容器⎈
      */
     @Bean
     @ConditionalOnBean(AbstractRedisChannelMessageListener.class) // 只有 AbstractChannelMessageListener 存在的时候，才需要注册 Redis pubsub 监听

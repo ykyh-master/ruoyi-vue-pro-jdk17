@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * 操作日志 ILogRecordService 实现类
  *
- * 基于 {@link OperateLogApi} 实现，记录操作日志
+ * 基于 {@link OperateLogApi} 实现，记录操作日志，参考：<a href="https://blog.csdn.net/qq_45635347/article/details/131461018">...</a>
  *
  * @author HUIHUI
  */
